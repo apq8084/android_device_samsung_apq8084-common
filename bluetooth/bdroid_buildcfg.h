@@ -1,13 +1,6 @@
 /*
- *
- *  Copyright (c) 2013, The Linux Foundation. All rights reserved.
- *  Not a Contribution, Apache license notifications and license are retained
- *  for attribution purposes only.
- *
  * Copyright (C) 2012 The Android Open Source Project
- * Copyright (C) 2016 The Sayanogen Project
- * Copyright (C) 2017 The LineageOS Project
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2014 The CyanogenMod Project <http://www.cyanogenmod.org>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,16 +18,11 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#include "btm_localname.h"
-
-#define MAX_ACL_CONNECTIONS    16
-#define MAX_L2CAP_CHANNELS    16
+#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S5 Plus"
 
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
-
-#define BLE_VND_INCLUDED   TRUE
-#define BLE_PRIVACY_SPT    FALSE
-#define BTIF_HF_WBS_PREFERRED FALSE /* Don't prefer WBS    */
+#define BTE_BLE_STACK_CONF_FILE "/etc/bluetooth/bt_stack.conf"
+#define BLE_VND_INCLUDED   TRUE     /* Enable WBS */
+#define BTIF_HF_WBS_PREFERRED TRUE  /* Use WBS    */
 
 #endif
-
